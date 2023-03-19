@@ -1,5 +1,6 @@
 :root {
   --background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
 }
 
 .App{
@@ -7,18 +8,18 @@
 }
 
 
-/* Header */
-
-.Header-top{
-  height: 7vh;
+/* layout */
+.layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .Mainbody{
-  height: 80vh;
+  flex-grow: 1;
 }
-.Footer-button{
-  height: 7vh;
 
-}
+
 .header-frm{
   width: 80vw;
 }
@@ -63,4 +64,8 @@
   .menu{
     text-align: start;
   }
+}
+
+.phoneInput{
+  border: none;
 }
