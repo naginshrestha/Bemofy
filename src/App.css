@@ -6,6 +6,9 @@
   background-image: var(--background-image)
 }
 
+
+/* Header */
+
 .Header-top{
   height: 7vh;
 }
@@ -16,16 +19,48 @@
   height: 7vh;
 
 }
-.formm{
-  width: 600px;
-}
-.Search-form{
-width: 500px;
+.header-frm{
+  width: 80vw;
 }
 
-@media screen and (min-width: 680px) {
-  .Search-form{
-    margin-top: 20px;
-  width: 80%;
+.search-form {
+  width: 30vw;
+
+
+}
+@media screen and (max-width :990px) {
+  .header-frm {
+    display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   margin-left: 10px;
+  }
+  .menu{
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-form {
+    width: 500px;
+   }
+   
+}
+@media screen and (max-width :700px) {
+
+  .search-form {
+   width: 350px;
+  }
+  .header-frm {
+    display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   margin-top: 10px;
+   margin-left: 10px;
+
+   
+  }
+  .menu{
+    text-align: start;
   }
 }

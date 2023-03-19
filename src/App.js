@@ -5,6 +5,8 @@ import { Registration } from './Pages/Registration';
 import { ForgetPassword } from './Pages/ForgetPassword';
 import { Dashboard } from './Pages/Dashboard';
 import { Layout } from './Components/Layout';
+import { About } from './Pages/About';
+import { Error } from './Pages/Error';
 
 function App() {
   return (
@@ -12,10 +14,12 @@ function App() {
       <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path='/' element={<Login/>} />
-          <Route path='/registration' element={<Registration/>} />
+        <Route path='/' element={<Dashboard/>} />
+          <Route path='/signin' element={<Login/>} />        
+          <Route path='/signup' element={<Registration/>} />
           <Route path='/forgetpassword' element={<ForgetPassword/>} />
-          <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='*' element={<Error/>}></Route>
 
 
         </Routes>
